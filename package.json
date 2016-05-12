@@ -1,0 +1,43 @@
+{
+  "name": "eas2rest",
+  "version": "0.1.0",
+  "description": "Convert EAS WebService to RESTful",
+  "main": "main.js",
+  "scripts": {
+    "start": "ts-node dist",
+    "test": "tsc && concurrently \"npm run lite\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install",
+    "cnpm": "npm install --production --registry=https://registry.npm.taobao.org",
+    "typings install": "typings install --ambient --save"
+  },
+  "author": "xxy1991",
+  "license": "MS-RL",
+  "dependencies": {
+    "restify": "^4.x.x",
+    "soap": "^0.15.x"
+  },
+  "devDependencies": {
+    "concurrently": "^2.x.x",
+    "gulp": "^3.9.x",
+    "gulp-clean": "^0.3.x",
+    "gulp-concat": "^2.6.x",
+    "gulp-jshint": "^2.x.x",
+    "gulp-less": "^3.1.x",
+    "gulp-rename": "^1.2.x",
+    "gulp-sass": "^2.3.x",
+    "gulp-typescript": "^2.13.x",
+    "gulp-uglify": "^1.5.x",
+    "gulp-util": "^3.x.x",
+    "jshint": "^2.9.x",
+    "lite-server": "^2.2.x",
+    "merge": "^1.2.x",
+    "ts-node": "^0.7.x",
+    "tslint": "^3.9.x",
+    "typescript": "^1.8.x",
+    "typings": "^0.7.x"
+  }
+}
