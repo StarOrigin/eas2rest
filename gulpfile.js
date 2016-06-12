@@ -15,7 +15,6 @@ var paths = {
     templatesSrc: ['./templates/**/*.htm', './templates/**/*.html'],
     templatesDest: './dist/',
     cssSrc: './css/**/*.css',
-    lessSrc: './css/**/*.less',
     scssSrc: ['./css/**/*.sass', './css/**/*.scss'],
     cssDest: './dist/css/',
     tsSrc: ['./src/**/*.ts', './src/**/*.tsx'],
@@ -36,10 +35,6 @@ gulp.task('templates', function () {
 });
 
 gulp.task('css', function () {
-    gulp.src(paths.lessSrc)
-        .pipe(less())
-        .pipe(gulp.dest(paths.cssDest));
-
     gulp.src(paths.scssSrc)
         .pipe(sass())
         .pipe(gulp.dest(paths.cssDest));
@@ -60,8 +55,7 @@ gulp.task('ts', function () {
 
 gulp.task('default', ['clean', 'templates', 'css', 'ts'], function () {
     //gulp.watch(paths.templatesSrc, ['templates']);
-
-    //gulp.watch(paths.lessSrc, ['css']);
+    
     //gulp.watch(paths.sassSrc, ['css']);
 
     //gulp.watch(paths.tsSrc, ['ts']);

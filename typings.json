@@ -1,8 +1,20 @@
 {
   "ambientDependencies": {
     "bunyan": "registry:dt/bunyan#0.0.0+20160412155112",
-    "node": "registry:dt/node#4.0.0+20160423143914",
     "restify": "registry:dt/restify#2.0.0+20160425141054",
     "soap": "registry:dt/soap#0.0.0+20160315063420"
+  },
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160602155235"
+  },
+  "globalDevDependencies": {
+    "gulp": "registry:dt/gulp#3.8.0+20160316155526",
+    "gulp-concat": "registry:dt/gulp-concat#0.0.0+20160316155526",
+    "gulp-rename": "registry:dt/gulp-rename#0.0.0+20160316155526",
+    "gulp-sass": "registry:dt/gulp-sass#0.0.0+20160316155526",
+    "gulp-tslint": "registry:dt/gulp-tslint#3.6.0+20160316155526",
+    "gulp-typescript": "registry:dt/gulp-typescript#0.0.0+20160317120654",
+    "orchestrator": "registry:dt/orchestrator#0.0.0+20160316155526",
+    "q": "registry:dt/q#0.0.0+20160417152954"
   }
 }
